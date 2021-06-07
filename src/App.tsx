@@ -3,9 +3,6 @@ import { Footer } from './components/Footer';
 import { Navbar } from './components/Navbar';
 import { SearchForm } from './components/SearchForm';
 import { HeroesList } from './HeroesList';
-//import { heroData } from "./data";
-
-
 
 function App() {
   return (
@@ -19,6 +16,7 @@ function App() {
         <HeroesList />
       </main>
       <footer>
+
         <Footer />
       </footer>
     </>

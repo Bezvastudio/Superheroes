@@ -8,17 +8,18 @@ interface PowerstatsProps {
     durability: number;
     power: number;
     combat: number;
+    large: boolean;
 }
 
-export const Powerstats: React.FC<PowerstatsProps> = ({intelligence, strength, speed, durability, power, combat}) => {
+export const Powerstats: React.FC<PowerstatsProps> = ({intelligence, strength, speed, durability, power, combat, large}) => {
         return (
-            <div className="mt-3">
-                <PowerChart id={"INT"} name={"intelligence"} value={intelligence} />                                     
-                <PowerChart id={"STR"} name={"strength"} value={strength} />                                     
-                <PowerChart id={"SPD"} name={"speed"} value={speed} />                                     
-                <PowerChart id={"DUR"} name={"durability"} value={durability} />                                     
-                <PowerChart id={"POW"} name={"power"} value={power} />                                     
-                <PowerChart id={"CMB"} name={"combat"} value={combat} /> 
-            </div>
+            <>
+                <PowerChart id={"INT"} name={"intelligence"} value={intelligence} large={large} />                                     
+                <PowerChart id={"STR"} name={"strength"} value={strength} large={large} />                                     
+                <PowerChart id={"SPD"} name={"speed"} value={speed} large={large} />                                     
+                <PowerChart id={"DUR"} name={"durability"} value={durability} large={large} />                                     
+                <PowerChart id={"POW"} name={"power"} value={power} large={large} />                                     
+                <PowerChart id={"CMB"} name={"combat"} value={combat} large={large} /> 
+            </>
         );
 }

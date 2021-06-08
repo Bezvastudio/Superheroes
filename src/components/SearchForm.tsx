@@ -8,9 +8,9 @@ interface SearchFormProps {
 export const SearchForm: React.FC<SearchFormProps> = ({placeholder, onChange}) => {
     return (
         <>
-            <div className="relative">
+            <div className="relative mx-auto lg:w-96 mb-10">
                 <input id="search" type="text" placeholder={placeholder}
-                    className="mx-auto bg-transparent border rounded-md lg:w-96 focus-within:ring focus-within:border-teal-500 py-2 pl-10 pr-2 m-1 text-gray-700 placeholder-gray-400 focus:outline-none focus:placeholder-transparent "
+                    className="mx-auto bg-transparent border rounded-md w-full focus-within:ring focus-within:border-teal-500 py-2 pl-10 pr-2 m-1 text-gray-700 placeholder-gray-400 focus:outline-none focus:placeholder-transparent "
                     onChange={onChange} 
                 />
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6 absolute left-2 top-1/2 transform -translate-y-1/2">

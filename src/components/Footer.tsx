@@ -13,7 +13,7 @@ export const Footer: React.FC<FooterProps> = () => {
                         React, Typescrypt, Tailwind css
                     </div>
                     <div className="flex-auto text-center">
-                        Frst react project of Martin Svoboda from <a href="https://www.bezvastudio.cz" target="_blank" rel="noreferrer">Bezva studio</a>
+                        First react project of Martin Svoboda from <a href="https://www.bezvastudio.cz" target="_blank" rel="noreferrer">Bezva studio</a>
                     </div>
                     <div className="flex-auto text-right">
                     <a href="#" className={'text-white uppercase rounded-md px-4 py-2 m-1 bg-indigo-500 hover:bg-indigo-600 focus:shadow-outline transition duration-500 ease'} >Back to top</a>
